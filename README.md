@@ -1,6 +1,6 @@
 # New-AwsSamlProfile
 
-`New-AwsSamlProfile` is a PowerShell function that configures AWS CLI profiles by assuming IAM roles using SAML assertions. This enables automated configuration of AWS profiles in SSO/federated authentication environments.
+`New-AwsSamlProfile` is a PowerShell function that configures AWS CLI profiles by [assuming IAM roles using SAML assertions](https://repost.aws/knowledge-center/aws-cli-call-store-saml-credentials). This enables automated configuration of AWS profiles in SSO/federated authentication environments.
 
 ---
 
@@ -13,7 +13,7 @@ Before using this function, ensure the following:
     `C:\Program Files\Amazon\AWSCLIV2\aws.exe`
 - IAM roles and SAML identity providers (IdPs) are properly configured in AWS
 - You have the correct **Role ARN** and **Identity Provider ARN**
-- You have a valid **Base64-encoded SAML Assertion**
+- You have a valid **[Base64-encoded SAML Assertion](https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_saml_view-saml-response.html)**
 
 ---
 
